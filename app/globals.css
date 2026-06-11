@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F5F0E8;
+  --surface: #EDEAE0;
+  --ink: #1A1A18;
+  --muted: #6B6B5E;
+  --line: #D4CFC3;
+  --primary: #2C4A35;
+  --primary-ink: #F5F0E8;
+  --primary-soft: rgba(44, 74, 53, 0.12);
+  --accent: #C0392B;
+  --accent-soft: rgba(192, 57, 43, 0.14);
+  /* RGB triplets — required for Tailwind opacity modifiers (bg-primary/50 etc.) */
+  --bg-rgb: 245 240 232;
+  --surface-rgb: 237 234 224;
+  --ink-rgb: 26 26 24;
+  --muted-rgb: 107 107 94;
+  --line-rgb: 212 207 195;
+  --primary-rgb: 44 74 53;
+  --primary-ink-rgb: 245 240 232;
+  --accent-rgb: 192 57 43;
+  --radius: 0px;
+  --space: 8px;
+  --motion: 350ms;
+}
+
+/* Functional floor only — never visual design (no forced columns, no !important grids) */
+*, *::before, *::after { box-sizing: border-box; min-width: 0; }
+html, body { overflow-x: clip; }
+img, video, svg { max-width: 100%; height: auto; }
+body { line-height: 1.5; }
+::selection { background: var(--primary); color: var(--primary-ink); }
